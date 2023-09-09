@@ -1,0 +1,71 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+img {
+  display: block;
+  width: 620px;
+border-radius: 5px;
+  margin: auto;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.15);
+}
+
+.breed-select {
+  max-width: 600px;
+  margin: 15px auto;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 48px;
+  height: 48px;
+  border-width: 3px;
+  border-style: dashed solid  solid dotted;
+  border-color: #FF3D00 #FF3D00 transparent #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+
+
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 20px;
+  top: 31px;
+  border: 10px solid transparent;
+  border-right-color: #FF3D00;
+  transform: rotate(-40deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.hidden {
+  display: none;
+}
+
+
+.cat-temperament {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+

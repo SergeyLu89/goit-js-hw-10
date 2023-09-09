@@ -39,7 +39,7 @@ function onBreedSelectChange(event) {
     })
     .catch(error => {
       Notiflix.Notify.failure(refs.error.textContent);
-      changeVisibility(refs.breedSelect);
+      changeVisibility(refs.loader);
       refs.catInfo.innerHTML = '';
     });
 }
